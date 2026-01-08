@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who We Are | PEDS MOTO</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: #000;
+            color: #f2f2f2;
+            line-height: 1.8;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .wrapper {
+            padding-top: 120px;
+            max-width: 1100px;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .title h1 {
+            font-size: 2.8rem;
+            color: #d4af37;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            font-size: 1.05rem;
+        }
+
+        .image-box {
+            margin-top: 80px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.6s ease, transform 0.6s ease;
+        }
+
+        .image-box:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 120px;
+        }
+
+        @media (max-width: 768px) {
+            .image-box img {
+                height: 50vh;
+            }
+
+            .title h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="whatwedo.html">WHAT WE DO</a>
+            <a href="whoweare.html">WHO WE ARE</a>
+            <a href="archives.html">ARCHIVES</a>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+
+        <section class="title">
+            <h1>WHO WE ARE</h1>
+        </section>
+
+        <div class="image-box">
+            <img src="media.jfif" alt="Legendary Helmet Display">
+        </div>
+
+        <section class="content">
+            <p>
+                <br> PEDS MOTO exists as a digital museum dedicated to the helmets worn by the
+                most iconic figures in motorcycle racing. These helmets are not treated
+                as accessories, but as historical artifacts shaped by speed, danger,
+                and identity.
+            </p>
+
+            <p>
+                Every design reflects a moment in time — a championship season, a fierce
+                rivalry, a crash survived, or a victory earned by fractions of a second.
+                Scratches, color schemes, and symbols tell stories that statistics alone
+                never could.
+            </p>
+
+            <p>
+                Our purpose is preservation. In an era where racing history moves fast
+                and fades quickly, we slow things down. We present helmets with respect,
+                clarity, and space — allowing fans to study, appreciate, and understand
+                the mindset of the riders who wore them at the limit.
+            </p>
+
+            <p>
+                This platform is built for enthusiasts who value legacy, detail, and
+                authenticity. No noise. No clutter. Just racing history, presented the
+                way it deserves to be seen.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 PEDS MOTO
+    </footer>
+
+</body>
+
+</html>
