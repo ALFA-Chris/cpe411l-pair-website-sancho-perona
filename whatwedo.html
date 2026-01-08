@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What We Do | PEDS MOTO</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #000;
+      color: #f2f2f2;
+      line-height: 1.8;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover { color: #fff; }
+
+    /* ===== PAGE WRAPPER ===== */
+    .wrapper {
+      padding-top: 120px;
+      max-width: 1200px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .title {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .title h1 {
+      font-size: 2.8rem;
+      color: #d4af37;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    .title p {
+      color: #aaa;
+      font-size: 1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    .section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 120px;
+    }
+
+    .section.reverse {
+      direction: rtl;
+    }
+
+    .section.reverse > * {
+      direction: ltr;
+    }
+
+    .text h2 {
+      color: #d4af37;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .text p {
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
+
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(212,175,55,0.3);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(100%);
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .image-box:hover img {
+      transform: scale(1.05);
+      filter: grayscale(0%);
+    }
+
+    /* ===== FULL WIDTH IMAGE ===== */
+    .full-image {
+      margin-bottom: 120px;
+      position: relative;
+    }
+
+    .full-image img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .full-image .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+      font-size: 0.85rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .title h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      nav a {
+        font-size: 0.8rem;
+      }
+
+      .full-image img {
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="whatwedo.html">WHAT WE DO</a>
+      <a href="whoweare.html">WHO WE ARE</a>
+      <a href="archives.html">ARCHIVES</a>
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="wrapper">
+
+    <!-- TITLE -->
+    <section class="title">
+      <h1>WHAT WE DO</h1>
+      <p>
+        Preserving speed, identity, and history through the helmets worn by
+        legends of MotoGP.
+      </p>
+    </section>
+
+    <!-- SECTION 1 -->
+    <section class="section">
+      <div class="text">
+        <h2>PASSION FOR RACING</h2>
+        <p>
+          We exist to honor the helmets that stood at the edge of danger and
+          greatness. Each piece represents courage, precision, and the mindset
+          of riders who pushed beyond limits at 300 km/h.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="jorgelorenzo.jpg" alt="Racing Helmet Exhibit">
+      </div>
+    </section>
+
+    <!-- FULL IMAGE -->
+    <section class="full-image">
+      <img src="track.jpg" alt="Race Track">
+      <div class="overlay"></div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section reverse">
+      <div class="text">
+        <h2>STORIES BEHIND EVERY DESIGN</h2>
+        <p>
+          From championship seasons to historic victories, each helmet carries
+          stories written in speed, sweat, and sacrifice. We curate these
+          artifacts to let fans experience racing beyond the podium.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="doctor.jpg" alt="MotoGP Helmet Close-up">
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section">
+      <div class="text">
+        <h2>PRESERVING LEGACY</h2>
+        <p>
+          Our mission is to preserve motorsport heritage with museum-level
+          presentation — transforming helmets into timeless symbols of racing
+          history, innovation, and human bravery.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="podium2010.jpg" alt="2010 MOTOGP Podium Display">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Legendary Helmets Museum
+  </footer>
+
+</body>
+</html>
