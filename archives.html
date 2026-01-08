@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archives | PEDS MOTO</title>
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: #000;
+            color: #f2f2f2;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* ===== PAGE WRAPPER ===== */
+        .wrapper {
+            padding-top: 120px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* ===== TITLE ===== */
+        .title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .title h1 {
+            font-size: 2.8rem;
+            color: #d4af37;
+            letter-spacing: 4px;
+        }
+
+        /* ===== ARCHIVE GRID ===== */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 60px;
+        }
+
+        /* ===== ARCHIVE CARD ===== */
+        .archive-card {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: #000;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .archive-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* ===== IMAGE ===== */
+        .archive-image {
+            overflow: hidden;
+        }
+
+        .archive-image img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: transform 0.6s ease, filter 0.6s ease;
+        }
+
+        .archive-card:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.06);
+        }
+
+        /* ===== TEXT ===== */
+        .archive-text {
+            padding: 30px;
+        }
+
+        .archive-text h2 {
+            color: #d4af37;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .archive-text p {
+            color: #e0e0e0;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 120px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+
+            .archive-image img {
+                height: 260px;
+            }
+
+            .title h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="whatwedo.html">WHAT WE DO</a>
+            <a href="whoweare.html">WHO WE ARE</a>
+            <a href="archives.html">ARCHIVES</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="wrapper">
+
+        <section class="title">
+            <h1>ARCHIVES</h1>
+        </section>
+
+        <section class="archive-grid">
+
+            <!-- MARC MARQUEZ -->
+            <div class="archive-card">
+                <div class="archive-image">
+                    <img src="marquezhelmet.jpg" alt="Marc Marquez Helmet">
+                </div>
+                <div class="archive-text">
+                    <h2>MARC MÁRQUEZ</h2>
+                    <p>
+                        Aggressive and instinctive, Marc Márquez’s helmet represents a rider
+                        who redefined modern MotoGP with impossible saves and relentless
+                        commitment. Its sharp graphics mirror a career built on risk,
+                        recovery, and domination at the limit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- VALENTINO ROSSI -->
+            <div class="archive-card">
+                <div class="archive-image">
+                    <img src="rossihelmet.jfif" alt="Valentino Rossi Helmet">
+                </div>
+                <div class="archive-text">
+                    <h2>VALENTINO ROSSI</h2>
+                    <p>
+                        Instantly recognizable worldwide, Valentino Rossi’s helmet designs
+                        combined humor, rivalry, and identity. Each iteration marked eras of
+                        competition, turning his helmet into one of motorsport’s most iconic
+                        symbols.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 PEDS MOTO
+    </footer>
+
+</body>
+
+</html>
